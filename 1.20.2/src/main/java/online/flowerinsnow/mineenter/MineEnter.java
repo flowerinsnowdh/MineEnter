@@ -2,6 +2,7 @@ package online.flowerinsnow.mineenter;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import online.flowerinsnow.mineenter.exception.UnexpectedException;
@@ -27,6 +28,7 @@ public class MineEnter implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		KeyBindingHelper.registerKeyBinding(SECONDARY_OPEN_CHAT);
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			MinecraftClient mc = MinecraftClient.getInstance();
 			if (mc.getOverlay() == null && mc.currentScreen == null) {
