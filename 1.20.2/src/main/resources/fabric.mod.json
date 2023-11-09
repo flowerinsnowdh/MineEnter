@@ -3,13 +3,13 @@
 	"id": "mineenter",
 	"version": "${version}",
 	"name": "MineEnter",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "允许再绑定一个打开聊天框的按键",
 	"authors": [
 		"flowerinsnow"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/flowerinsnowdh/MineEnter",
+		"issues": "https://github.com/flowerinsnowdh/MineEnter/issues"
 	},
 	"license": "GPL-3",
 	"icon": "assets/mineenter/icon.png",
@@ -21,7 +21,7 @@
 	},
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": ">1.16.5",
+		"minecraft": ">=1.16.5",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
