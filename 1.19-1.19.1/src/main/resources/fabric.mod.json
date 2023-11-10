@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "mineenter",
+	"version": "${version}",
+	"name": "MineEnter",
+	"description": "允许再绑定一个打开聊天框的按键",
+	"authors": [
+		"flowerinsnow"
+	],
+	"contact": {
+		"sources": "https://github.com/flowerinsnowdh/MineEnter",
+		"issues": "https://github.com/flowerinsnowdh/MineEnter/issues"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/mineenter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"online.flowerinsnow.mineenter.MineEnter"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.6",
+		"minecraft": ">=1.19",
+		"java": ">=17",
+		"fabric": ">=0.55.1"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
